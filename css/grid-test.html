@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Test</title>
+    <style>
+        .root{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            height: 100%;
+            width: 70%;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 10px;
+            font-size: 18px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .box-o {
+            border: 1px solid black;
+            height: 90vh;
+            padding: 8px;
+        }
+
+        #left {
+            display: grid;  
+            grid-template-columns: 1fr 5fr;
+            gap: 8px;
+        }
+
+        #l-left{
+            background-color: #e6e6e6;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+        #l-right{
+            display: grid;
+            grid-template-rows: 1fr 4fr 1fr;
+            gap: 8px;
+        }
+        .l-r-box{
+            /* border:  1px solid black; */
+            background-color: #e6e6e6;
+              display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #right{
+            display: grid;
+            gap: 8px;
+            grid-template-rows: 1fr 3fr 1fr 1fr;
+        }
+        .r-box{
+            /* border: 2px solid black; */
+            background-color: #e6e6e6;
+              display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="root">
+    <div class="container">
+
+        <div class="box-o" id="left">
+            <div class="l-box" id="l-left">Side</div>
+            <div class="l-box" id="l-right">
+                <div class="l-r-box">Header</div>
+                <div class="l-r-box">Main</div>
+                <div class="l-r-box">Footer</div>
+            </div>
+        </div>
+
+        <div class="box-o" id="right">
+            <div class="r-box">Header</div>
+            <div class="r-box">Main</div>
+            <div class="r-box">Side</div>
+            <div class="r-box">Footer</div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
