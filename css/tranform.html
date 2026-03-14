@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conatiner{
+            width: 500px;
+            height: 500px;
+            background-color: rgb(216, 227, 200);
+            border: 2px solid darkgoldenrod;
+        }
+        .ball{
+            height: 50px;
+            width: 50px;
+            border-radius: 100%;
+            background-color: red;
+            transition: all 3s linear ;
+        }
+        .ball:hover{
+            transform: translate(500px,500px);
+            height: 100px;
+            width: 100px;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatiner">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
