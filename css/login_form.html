@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .container{
+            background: url("https://img.freepik.com/premium-vector/nature-beauty-landscape-fantasy-cartoon-background-wallpaper_884500-24175.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            height: 350px;
+            width: 400px;
+            /* border: 2px solid rgba(148, 54, 54, 0.679); */
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.21);
+        }
+        form h3{
+            display: flex;
+            justify-content: center;
+            font-size: xx-large;
+            margin-bottom: 30px;
+            color: white;
+        }
+        form input{
+            padding: 10px;
+            border-radius: 40px;
+            font-size: larger;
+            border-color: rgba(255, 0, 0, 0.451);
+        }
+        form button{
+            padding: 10px;
+            border-radius: 40px;
+            font-size: large;
+            border-color: rgba(255, 0, 0, 0.166);
+
+        }
+        form .reminder{
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+        .reminder .left{
+            display: flex;
+            gap: 4px;
+        }
+        .reminder .right{
+            cursor: pointer;
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+            color: white;
+        }
+        strong{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h3>Login</h3>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <div class="reminder">
+                <div class="left">
+                    <input type="checkbox">
+                    <p>Reminder me</p>
+                </div>
+                <div class="right">Forget password?</div>
+            </div>
+            <button>Login</button>
+            <p class="footer">Don't have an account? <Strong>Register</Strong></p>
+        </form>
+    </div>
+    <script src="https://unpkg.com/@boxicons/js@latest"></script>
+
+</body>
+</html>
