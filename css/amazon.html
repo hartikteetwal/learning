@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myzon</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <style>
         *{
             padding: 0;
@@ -12,7 +13,7 @@
         .container{
             /* width: 100vw; */
             /* height: 100vh; */
-            height: 60px;
+            /* height: 60px; */
             /* background-color: rgb(119, 55, 55) */
                    position: sticky;
              top: 0;
@@ -64,13 +65,29 @@
              font-size: large;
              font-weight: bold;
         }
-        input{
+        .input{
             height:40px;
             width: 88%;
-            padding: 0px 10px;
+          
+        }
+        input{
+            width: 100%;
+            height: 100%;
+  padding: 0px 10px;
             border: none;
              border-radius: 0px 20px 20px 0px;
                 font-size: large;
+        }
+        .bx-search{
+            position:relative;
+            top: -30px;
+            left: 510px;
+            font-size: x-large;
+            color: black;
+            cursor: pointer;
+        }
+        .bx-menu{
+            margin-left: 20px;
         }
         #India{
             color: white;
@@ -102,6 +119,10 @@
         #box-6{
             font-size: 15px;
             margin-right: 20px;
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            cursor: pointer;
            
         }
         .container-2{
@@ -136,6 +157,7 @@ color: white;
 padding: 0px 4px;
 font-size: 14px;
 color: white;
+cursor: pointer;
         }
         .raja p:hover{
             border: 2px solid black;
@@ -222,7 +244,10 @@ display: flex;
                  <option value="modinagar">modinagar</option>
                  <option value="meerut">meerut</option>
              </select>
+             <div class="input">
               <input type="search..." placeholder="search..."> 
+<i class="bx bx-search" ></i>
+            </div>
             </div>
              <div class="box" id="box-4">
                <p id="hallo"> Hello, sing in</p>
@@ -232,13 +257,13 @@ display: flex;
                 <p id="return">Returns</p>
                 <p id="order">& Orders</p>
              </div>
-             <div class="box" id="box-6">Cart</div>
+             <div class="box" id="box-6"><i class="bx bx-cart" ></i>Cart</div>
             </form>
         </div>
     </div>
     <div class="container-2">
         <div class="raja" id="left">
-<img src="menu.svg" title="manu" alt="">
+<i class="bx bx-menu" style="font-size: x-large; color: white;"></i>
 <select>
     <option value="All">All</option>
     <option value="Harsh">Harsh</option>
@@ -376,5 +401,6 @@ display: flex;
     <div class="container-4">
 
     </div>
+
 </body>
 </html>
