@@ -14,6 +14,9 @@
             /* height: 100vh; */
             height: 60px;
             /* background-color: rgb(119, 55, 55) */
+                   position: sticky;
+             top: 0;
+             z-index: 5;
         }
         .navbar{
             /* width: 300px; */
@@ -24,6 +27,7 @@
              padding: 10px 0px
              ;
              align-items: center;
+      
         }
         .box{
             color: white;
@@ -109,6 +113,7 @@
                         background-color:rgb(172, 151, 165);
 padding: none;
 border: none;
+color: white;
         }
         .raja{
             height: 100%;
@@ -130,6 +135,7 @@ border: none;
             align-items: center;
 padding: 0px 4px;
 font-size: 14px;
+color: white;
         }
         .raja p:hover{
             border: 2px solid black;
@@ -169,7 +175,7 @@ display: flex;
         }
         .container-3{
             background: url(https://9to5mac.com/wp-content/uploads/sites/6/2025/09/iphone-17-pro-max-concept.jpg?quality=82&strip=all&w=1600);
-            width: 100vw;
+            /* width: 100vw; */
             height: 100vh;
              display: flex;
              FLEX-WRAP: wrap;
@@ -180,15 +186,25 @@ display: flex;
         }
         .photo{
             width: 310px;
-            height: 400px;
+            height: 350px;
             background-color: white;
             /* margin: px 20px; */
             position: relative;
              top: 250px;
-             padding: 3;
-            
-           
+             padding: 5px;
         }
+        .container-4{
+            background: url(  https://t4.ftcdn.net/jpg/04/61/47/03/360_F_461470323_6TMQSkCCs9XQoTtyer8VCsFypxwRiDGU.jpg);
+            height: 400px;
+            /* width: 100vw; */
+            background-size:cover;
+            background-repeat: no-repeat;
+            transition: all 2s ease;
+        }
+        .photo:hover{
+            transform: scale(1.02);
+        }
+        
     </style>
 </head>
 <body>
@@ -256,24 +272,109 @@ display: flex;
     </div>
     <div class="container-3">
 <div class="photo" id="ram-1">
+    <div style="padding: 5px;">
     <div>
-        <h3>Continue shopping deals</h3 >
-    </div>
-    <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
-        <div><img src="https://m.media-amazon.com/images/I/61Ab+wE97gL._AC_SY145_.jpg" alt=""></div>
-        <div><img src="https://m.media-amazon.com/images/I/61XSfF-XNjL._AC_SY145_.jpg" alt=""></div>
-        <div><img src="https://m.media-amazon.com/images/I/81DSbtl1MTL._AC_SY145_.jpg" alt=""></div>
-        <div><img src="https://m.media-amazon.com/images/I/81OqtpiID8L._AC_SY145_.jpg" alt=""></div>
-    </div>
-    <div><span></span></div>
+   <h3>Appliances for your home | Up to 55% off</h3>
 </div>
-<div class="photo"></div>
-<div class="photo"></div>
-<div class="photo"></div>
-<div class="photo"></div>
-<div class="photo"></div>
-<div class="photo"></div>
-<div class="photo"></div>
+   <div style="display: flex; flex-wrap: wrap; justify-content: space-around;"> 
+   <div><img width="150px" height="120px" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg" alt=""><h6>Air Conditioners</h6></div>
+   <div><img width="150px" height="120px" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg" alt=""><h6> Refrigerators</h6></div>
+   <div><img width="150px" height="120px" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg" alt=""><h6>Microwaves</h6></div>
+   <div><img width="150px" height="120px" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg" alt=""><h6>Washing machines</h6></div>
+</div></div>
+
+<div><span>see more</span></div>
+</div>
+<div class="photo">
+    <div>
+        <h3>Starting ₹49 | Deals on home essentials</h3>
+    </div>
+    <div div style="display: flex; flex-wrap: wrap; justify-content: space-around;;">
+        <div><img width="150px" height="120px" src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Wipes_low_res_V1._SY116_CB549138744_.jpg" alt=""><h6>Cleaning store</h6></div>
+        <div><img width="150px" height="120px" src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Shower_heads_low_res_V1._SY116_CB549138744_.jpg" alt=""><h6>Bathroom-event</h6></div>
+        <div><img width="150px" height="120px" src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Tools_low_res_V1._SY116_CB549138744_.jpg" alt=""><h6></h6>Tools store</div>
+        <div><img width="150px" height="120px" src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Wallpapers_low_res_V1._SY116_CB549138744_.jpg" alt=""><h6>Wallpaper</h6></div>
+    </div>
+    
+    <div><span>see more</span></div>
+</div>
+<div class="photo">
+    <div>
+    
+    <div style="padding: 15px 0px;">
+        
+        <h3>Revamp your home in style</h3>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; padding: px;  ">
+        <div><img width="150" height="100px" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2._SY116_CB555624324_.jpg" alt=""><h6>Cushion covers,</h6><H6>bedsheets & more</H6></div>
+        <div><img width="150" height="100px" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg" alt=""><h6>Figurines,vases & more</h6></div>
+        <div><img width="150" height="100px" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_storage_1._SY116_CB555624324_.jpg" alt=""><h6>Home storage</h6></div>
+        <div><img width="150" height="100px" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_lighting_2._SY116_CB555624324_.jpg" alt=""><h6>Lighting solutions</h6></div></div>
+        
+    </div>
+    <br>
+    <div style="padding: 8px;"><span>see more</span></div>
+</div>
+<div class="photo">
+    <div>
+        <h3>Financial Year End Sale | Bulk discounts + 10%...</h3>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around;padding: 2px; ">
+        <div><img width="140px" height="" src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img26/march/gw/QC1_186_116_1403._SY116_CB784909716_.jpg" alt=""><h6>Up to 40% off</h6>Laptops<h6></h6></div>
+        <div><img width="140px" height="" src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img26/march/gw/QC2_186_116_1403._SY116_CB784909716_.jpg" alt=""><h6>Up to 40% off</h6>Printers<h6></h6></div>
+        <div><img width="140px" height="" src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img26/march/gw/QC3_186_116_1403._SY116_CB784908702_.jpg" alt=""><h6>Up to 40% off</h6>Monitors<h6></h6></div>
+        <div><img width="140px" height="" src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img26/march/gw/Ablogo_186_116_1403._SY116_CB784909716_.jpg" alt=""><h6>Up to 40% off</h6>Networking<h6></h6></div>
+    </div>
+    <div style="padding: 5px;"><span>see more</span></div>
+    </div>
+
+<div class="photo">
+    <div>
+        <h3>Customers’ Most-Loved Fashion for you</h3>
+    </div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around; ">
+    <div><img width="100px" height="150px" src="https://m.media-amazon.com/images/I/61UE51azLWL._AC_SY145_.jpg" alt=""></div>
+    <div><img width="150" height="150px" src="https://m.media-amazon.com/images/I/81wMr6C9oNL._AC_SY145_.jpg" alt=""></div>
+    <div><img width="150px" height="100px" src="https://m.media-amazon.com/images/I/71Zmqrerm3L._AC_SY145_.jpg" alt=""></div>
+    <div><img width="100px" height="150px" src="https://m.media-amazon.com/images/I/51cADvJbCmL._AC_SY145_.jpg" alt=""></div>
+</div>
+<div><span></span></div>
+</div>
+<div class="photo">
+    <div>
+        <h3>Best Sellers in Clothing & Accessories</h3>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; ">
+        <div><img width="120px" height="150px" src="https://m.media-amazon.com/images/I/61UE51azLWL._AC_SY170_.jpg" alt=""></div>
+        <div><img width="120px" height="150px" src="https://m.media-amazon.com/images/I/713n+TxyfCL._AC_SY170_.jpg" alt=""></div>
+        <div><img width="120px" height="150px" src="https://m.media-amazon.com/images/I/51xOEh5DKYL._AC_SY170_.jpg" alt=""></div>
+        <div><img width="120px" height="150px" src="https://m.media-amazon.com/images/I/81biKixsaDL._AC_SY170_.jpg" alt=""></div>
+     </div>
+         
+   
+</div>
+<div class="photo">
+    <div>
+        <h3>Best Sellers in Home & Kitchen</h3>
+    </div>
+    <div style="display: flex; flex-wrap: wrap;justify-content: space-around;">
+        <div><img width="150px" height="150px" src="https://m.media-amazon.com/images/I/61fn1xtHO4L._AC_SY170_.jpg" alt=""></div>
+        <div><img width="150px" height="150px" src="https://m.media-amazon.com/images/I/617LpMjiSSL._AC_SY170_.jpg" alt=""></div>
+        <div><img width="150px" height="150px" src="https://m.media-amazon.com/images/I/71775fRr+gL._AC_SY170_.jpg" alt=""></div>
+        <div><img width="150px" height="150px" src="https://m.media-amazon.com/images/I/71rH4vEE4nL._AC_SY170_.jpg" alt=""></div>
+    </div>
+</div>
+<div class="photo">
+    <div>
+        <h3>Starting ₹99 | Start your fitness journey</h3>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; ">
+        <div><img width="300" height="300" src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/Sports/GW_Desktop/1199101_379x304_Compressed._SY304_CB448278349_.jpg" alt=""></div>
+    </div>
+</div>
+</div>
+    <div class="container-4">
+
     </div>
 </body>
 </html>
