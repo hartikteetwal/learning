@@ -9,7 +9,7 @@ console.log(arr[3])
 arr.push("hartik")
 arr.pop()
 
-let sclicc = arr.slice(-5,-1)
+let sclicc = arr.slice(0,4)
 console.log("slice", sclicc)
 
 
@@ -34,4 +34,6 @@ console.log(obj.role)
 console.log(obj["mobile brand"])
 
 let lengthOfObject = Object.keys(obj).length
-console.log("length",lengthOfObject)
+console.log("length", lengthOfObject)
+
+
